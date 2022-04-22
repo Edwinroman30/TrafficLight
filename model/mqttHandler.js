@@ -1,23 +1,21 @@
 const mqtt = require('mqtt');
-const {mqttErrors} = require('../controller/errorHandles');
+const {mqttErrors, closeHandler} = require('../controller');
 
 class MqttHandler {
 
   constructor() {
     
-    this.mqttClient = null;
-    this.host       = `mqtt://0.0.0.0`;
-    this.username   = ''; // mqtt credentials if these are needed to connect
-    this.password   = ''; // mqtt credentials if these are needed to connect
+    this.mqttClient           = null;
+    this.host                 = `mqtt://0.0.0.0`;
+    this.username             = ''; // mqtt credentials if these are needed to connect
+    this.password             = ''; // mqtt credentials if these are needed to connect
     
-    this.location      = 'Ave. Winston Churchill';
-    this.timeOfchange  =  10; //Given in seconds
-    this.colorStatus   = ['Green','Orangen','Red'];
-    
+    this.timeOfchange         =  10; //Given in seconds
+    this.colorStatus          = ['Green','Orangen','Red']; 
     this.objSetInterval       = null; // Time of the setInterval function.
     
-    this.userRequest   = 0;
-    this.porcentToReduce = 0;
+    this.userRequest          = 0;
+    this.porcentToReduce      = 0;
   }
   
   connect() {
@@ -28,19 +26,15 @@ class MqttHandler {
     // Mqtt error calback
     this.mqttClient.on('error', mqttErrors);
 
-    this.mqttClient.on('close', () => {
-
-        clearInterval(this.objSetInterval);
-        console.log(`mqtt client disconnected`);
-
-    });
+    // Mqtt close calback
+    this.mqttClient.on('close', closeHandler);
 
   }
 
- initialStatus(commingValues){
-    //Going back to defaul status.
-    commingValues =  [10, 10,  10];
-    this.timeOfchange = commingValues[0];
+ initialStatus(){
+    
+  //Going back to defaul status.
+    this.timeOfchange = 10; //Replace in the dotENV
     this.porcentToReduce = 0;
     this.userRequest = 0; 
 }
