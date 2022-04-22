@@ -30,8 +30,8 @@ Lets configure the **mosquitto.conf** file:
 > listener 1883 0.0.0.0 #To access with the IP address
 protocol mqtt
 allow_anonymous true 
-> 
-listener 9001 #To enable websockets
+
+> listener 9001 #To enable websockets
 protocol websockets
 
 
@@ -43,7 +43,8 @@ protocol websockets
 
 ------------
 
-**Last step, run the mosquitto from the configuration files:**
+##### Last step, run the mosquitto from the configuration files:
+
 `mosquitto -c mosquitto.conf -p 1884`
 
 
