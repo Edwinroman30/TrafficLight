@@ -1,0 +1,17 @@
+{
+  "name": "Traffic_Light_IoT",
+  "version": "1.0.0",
+  "description": "In this repository you will find a smart solution for a Traffic Light. Essentially, using (IoT) Internet of Things tools. The main idea of it is to bring support to disabled people or any kind of person with issues at the time of crossing the streets.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mqtt": "^4.3.7"
+  }
+}
