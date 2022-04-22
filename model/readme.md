@@ -1,4 +1,4 @@
-## Note:
+## MQTT SERVER:
 
-Just in case that I need to interact with an API and my things may I use
-an HTTP server how it is struture in the serve.js file.
+Here you would find a class that define the whole struture to manage the broker connection 
+and the definition of the event (EvenEmmiters) that are trigger when they are performer.  
