@@ -24,9 +24,7 @@ mqttServer.mqttClient.on('connect', () => {
                         posibleColorStatus = 0;
                         
                         //Going back to defaul status.
-                        mqttServer.timeOfchange = 10;
-                        mqttServer.porcentToReduce = 0;
-                        mqttServer.userRequest = 0;
+                        mqttServer.initialStatus();
                         
                     }
                   
@@ -45,9 +43,7 @@ mqttServer.mqttClient.on('connect', () => {
 
                     }else{
                       //Going back to defaul status.
-                      mqttServer.timeOfchange = 10;
-                      mqttServer.porcentToReduce = 0;
-                      mqttServer.userRequest = 0;  
+                      mqttServer.initialStatus();
 
                         //Notify to clients when is Red
                         mqttServer.mqttClient.publish('semaphore/state', 
@@ -74,8 +70,8 @@ mqttServer.mqttClient.on('connect', () => {
     // When a message arrives, console.log it
     mqttServer.mqttClient.on('message', function (topic, message) {
 
-      mqttServer.userRequest= mqttServer.userRequest + 1;
-      //console.log(message.toString());
+        mqttServer.userRequest= mqttServer.userRequest + 1;
+        //console.log(message.toString());
 
     });
 
