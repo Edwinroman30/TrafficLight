@@ -57,8 +57,7 @@ Useful foros:
 > https://www.youtube.com/playlist?list=plzermiwkdsxyydzmk7z4wzzy8neg0z-fw
 
 Using segure connection on mosquitto:
-> 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-debian-9
+> https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-debian-9
 
 > https://www.programmersought.net/en/article/324140099.html
 
