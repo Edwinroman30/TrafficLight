@@ -6,12 +6,12 @@ class MqttHandler {
   constructor() {
     
     this.mqttClient           = null;
-    this.host                 = `mqtt://0.0.0.0`;
+    this.host                 = `mqtt://broker.hivemq.com:1883`;
     this.username             = ''; // mqtt credentials if these are needed to connect
     this.password             = ''; // mqtt credentials if these are needed to connect
     
     this.timeOfchange         =  10; //Given in seconds
-    this.colorStatus          = ['Green','Orangen','Red']; 
+    this.colorStatus          = ['Green','Yellow','Red']; 
     this.objSetInterval       = null; // Time of the setInterval function.
     
     this.userRequest          = 0;
