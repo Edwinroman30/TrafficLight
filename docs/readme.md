@@ -5,6 +5,15 @@ inteligente en calles de la ciudad de Santo Domingo. Esta primera fase consiste 
 identificar escenarios de problemas que usted pueda resolver utilizando tecnologías IOT
 (internet of things) para cruce de peatones.
 
+
+### Overview:
+<hr>
+<center>
+<img src="https://github.com/Edwinroman30/TrafficLight/blob/main/docs/IoT_Pedestrian_Traffic_Safaty.drawio.png" width="100%" heigth="50px">
+</center>
+<hr>
+
+
 El alcance de esta primera fase, es que ustedes especifiquen su stack de tecnología y la
 arquitectura para el proyecto web App potencialmente aplicable para soluciones del
 tránsito público, específicamente el cruce de peatones, en condiciones normales, o en
@@ -24,6 +33,7 @@ condiciones especiales (discapacidad física, motriz, etc).
 
 
 ## Requerimiento:
+
 Desarrollar una solución de IOT para cruce de peatones inteligente en calles de la
 ciudad de Santo Domingo. Este sistema consiste en identificar escenarios de
 problemas que usted pueda resolver utilizando tecnologías IOT (internet of things)
@@ -31,6 +41,7 @@ para cruce de peatones. Debe de desarrollar una web app potencialmente aplicable
 para soluciones del tránsito público, específicamente el cruce de peatones, en
 condiciones normales, o en condiciones especiales (discapacidad física, motriz,
 etc).
+
 - Permitir enviar señal en la app para poder cruzar la vía.
 - Permitir cancelar mi solicitud de cruce antes de 10 segundos.
 - La aplicación de móvil (o aplicación web progresiva) debe de dar
@@ -54,6 +65,8 @@ rojo, este debe de mostrar en pantalla un mensaje de que no puede cruzar
 - Llevar un registro del cruce o recorrido donde cada 10 pasos son 1 metro.
 - Vibrar el móvil del usuario mientras se pueda cruzar.
 
+Nota: En la actual versión de este proyecto solo se cumple con los puntos esenciales de este, por lo que hago la aclaración
+de que no poseé 100% como por ejemplo: Vibrar el móvil del usuario mientras se pueda cruzar. (Aunque se puede implementar).
 
 ## Objetivo:
 
@@ -63,13 +76,14 @@ hora de recorrer las vías más transitadas de sus entornos. Este proyecto plant
 usar tecnologías de Internet de las cosas (IoT por sus siglas en Inglés) para brindar
 una solución eficaz e innovadora.
 
-### Alcances Del proyecto:
+## Alcances del proyecto:
+
 ##### Alcance:
 Construir un nuevo semáforo, que permita a los usuarios peatonales tener mejor
 facilidad a la hora de cruzar la calle, el mismo se desarrollará en un plazo de 7 dias ,
 y de acuerdo con las especificaciones técnicas del documento adjunto facilitados
 
-### Limitación:
+##### Limitación:
 Pueden encontrarse problemas de compatibilidad en los diferentes dispositivos con
 los cuales se correrán las aplicaciones, así como pueden fallar las diferentes
 tecnologías de IOT.
