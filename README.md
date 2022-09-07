@@ -1,6 +1,14 @@
 # Traffic Light
 In this repository you will find a smart solution for a Traffic Light. Essentially, using (IoT) Internet of Things tools. The main idea of it is to bring support to disabled people or any kind of person with issues at the time of crossing the streets.
 
+### Overview:
+<hr>
+<center>
+<img src="https://github.com/Edwinroman30/TrafficLight/blob/main/docs/IoT_Pedestrian_Traffic_Safaty.drawio.png" width="100%" heigth="50px">
+</center>
+<hr>
+
+
 ## Mosquitto Broker configurations:
 
 ##### To install mosquitto:
@@ -50,16 +58,6 @@ protocol websockets
 
 <br>
 
-Useful foros:
-
-> https://stackoverflow.com/questions/54878001/cannot-get-mosquitto-to-allow-connection-from-outside-local-network
-
-> https://www.youtube.com/playlist?list=plzermiwkdsxyydzmk7z4wzzy8neg0z-fw
-
-Using segure connection on mosquitto:
-> https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-debian-9
-
-> https://www.programmersought.net/en/article/324140099.html
-
-Mosquitto instalation on windows 10:
-> https://www.youtube.com/watch?v=cl6n3wafweq
+## Documentation:
+-  <a href="https://github.com/Edwinroman30/TrafficLight/tree/main/docs"> Documentation (Spanish) </a>
+- <a href="https://github.com/Edwinroman30/TrafficLight/blob/main/docs/mosquitto_commands.md">Useful configuration resources.</a>
